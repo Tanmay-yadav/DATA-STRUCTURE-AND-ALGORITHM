@@ -4,7 +4,20 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "reverse_the_array",
+            "request": "launch",
+            "mainClass": "reverse_the_array",
+            "projectName": "Dinesh_Varyani_274e41ca"
+        },
+        {
+            "type": "java",
+            "name": "RemoveEven",
+            "request": "launch",
+            "mainClass": "RemoveEven",
+            "projectName": "Dinesh_Varyani_274e41ca"
+        },
         {
             "type": "java",
             "name": "Current File",
