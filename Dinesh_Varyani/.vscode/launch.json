@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "resizing_array",
+            "request": "launch",
+            "mainClass": "resizing_array",
+            "projectName": "Dinesh_Varyani_274e41ca"
+        },
+        {
+            "type": "java",
+            "name": "Movingzeros",
+            "request": "launch",
+            "mainClass": "Movingzeros",
+            "projectName": "Dinesh_Varyani_274e41ca"
+        },
+        {
+            "type": "java",
+            "name": "secondmax",
+            "request": "launch",
+            "mainClass": "secondmax",
+            "projectName": "Dinesh_Varyani_274e41ca"
+        },
+        {
+            "type": "java",
+            "name": "Minarray",
+            "request": "launch",
+            "mainClass": "Minarray",
+            "projectName": "Dinesh_Varyani_274e41ca"
+        },
+        {
+            "type": "java",
             "name": "reverse_the_array",
             "request": "launch",
             "mainClass": "reverse_the_array",
