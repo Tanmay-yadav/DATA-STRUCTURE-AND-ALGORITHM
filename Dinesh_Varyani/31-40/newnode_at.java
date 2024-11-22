@@ -50,7 +50,15 @@ public static void main(String[] args) {
     na.insert(2,3);
     na.insert(3,4);
     na.insert(4,5);
+    System.out.println("before deleting first node");
     na.display();
+    listnode previous =na.head;
+    listnode current =na.head.next;
+    previous.next=null;
+    na.head=current;
+    System.out.println("after deleting firstnode:");
+    na.display();
+
  
    
 
