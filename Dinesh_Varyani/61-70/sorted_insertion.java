@@ -35,27 +35,27 @@ public void display(){
     }
     System.out.println("null");
 }
-public void sortedinsertion(int data){
-    listnode node =new listnode(data);
-    listnode current = head;
-    while(current!=null && current.next!=null){
-        if(current.data==current.next.data && node.data==current.data){
-           node.next=current.next;
-           node =current.next;
-                       
-        }else if (node.data>current.data && node.data<current.next.data) {
-            node.next =current.next;
-            node =current.next;
-        }else if (node.data<current.data && node.data<current.next.data) {
-            node.next=current;
-            head=node;
-            
-        }
-        current =current.next;
-    }
-    // System.out.println("The ");
+public void sortedinsertion(int data) {
+    listnode node = new listnode(data);
 
+    // If the list is empty or the new node needs to be inserted at the head
+    if (head == null || head.data >= node.data) {
+        node.next = head;
+        head = node;
+        return;
+    }
+
+    // Traverse the list to find the appropriate position
+    listnode current = head;
+    while (current.next != null && current.next.data < node.data) {
+        current = current.next;
+    }
+
+    // Insert the new node
+    node.next = current.next;
+    current.next = node;
 }
+
 public static void main(String[] args) {
     sorted_insertion se =new sorted_insertion();
     se.insert(1, 2);
@@ -68,6 +68,9 @@ public static void main(String[] args) {
     se.display();
     System.out.println("After inserting the data into the sorted linkedlist");
     se.sortedinsertion(1);
+    se.sortedinsertion(5);
+    se.sortedinsertion(9);
+    
     se.display();
 
 }
