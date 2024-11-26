@@ -1,4 +1,5 @@
- public class detecting_loop {
+public class starting_point_of_loop {
+
     
         private listnode head;
         private static class  listnode{
@@ -56,7 +57,7 @@
         node.next = current.next;
         current.next = node;
     }
-    public boolean isloop(){
+    public listnode isloop(){
      listnode slwptr = head;
      listnode fastptr =head;
      while (fastptr!=null && fastptr.next !=null) {
@@ -65,16 +66,29 @@
         fastptr=fastptr.next.next;
         slwptr=slwptr.next;
         if (slwptr==fastptr) {
-            return true;
+            
+            return getstart(slwptr);
         }
 
     
     }
-    return false;
+    return null;
+    }
+    public listnode getstart(listnode slwptr){
+        listnode temp =head;
+        while (slwptr!=temp) {
+            temp=temp.next;
+            slwptr=slwptr.next;
+            
+
+        }
+        return temp;
+        
+
     }
     
     public static void main(String[] args) {
-        detecting_loop se =new detecting_loop();
+        starting_point_of_loop se =new starting_point_of_loop();
         // se.insert(1, 2);
         // se.insert(2, 3);
         // se.insert(3, 4);
@@ -99,13 +113,9 @@
         seventh.next=eighth;
         eighth.next=ninth;
         ninth.next=sixth;
-        if(se.isloop()){
-            System.out.println("The loop is present");
-
-        }else{
-            System.out.println("There is no loop");
-        }
-
+        System.out.println("the loop start at:");
+       System.out.println(se.isloop().data);
+         
 
 
 
@@ -124,7 +134,9 @@
     
     
     
-    }
+    
     
     
 
+
+}
