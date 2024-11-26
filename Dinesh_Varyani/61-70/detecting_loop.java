@@ -1,4 +1,4 @@
-public class detecting_loop {
+ public class detecting_loop {
     
         private listnode head;
         private static class  listnode{
@@ -56,6 +56,22 @@ public class detecting_loop {
         node.next = current.next;
         current.next = node;
     }
+    public boolean isloop(){
+     listnode slwptr = head;
+     listnode fastptr =head;
+     while (fastptr!=null && fastptr.next !=null) {
+        
+        
+        fastptr=fastptr.next.next;
+        slwptr=slwptr.next;
+        if (slwptr==fastptr) {
+            return true;
+        }
+
+    
+    }
+    return false;
+    }
     
     public static void main(String[] args) {
         detecting_loop se =new detecting_loop();
@@ -83,12 +99,18 @@ public class detecting_loop {
         seventh.next=eighth;
         eighth.next=ninth;
         // ninth.next=sixth;
+        if(se.isloop()){
+            System.out.println("The loop is present");
+
+        }else{
+            System.out.println("There is no loop");
+        }
 
 
 
 
         // System.out.println("before inserting the data into the sorted linkedlist:");
-        se.display();
+        // se.display();
         // System.out.println("After inserting the data into the sorted linkedlist");
         // se.sortedinsertion(1);
         // se.sortedinsertion(5);
