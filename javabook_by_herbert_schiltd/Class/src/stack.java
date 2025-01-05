@@ -1,5 +1,5 @@
 public class stack {
-    int stck[]=new int [10];
+    int[] stck =new int [10];
     int tos;
 
     stack(){//intialize top of stack
