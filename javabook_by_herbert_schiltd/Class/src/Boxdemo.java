@@ -26,7 +26,7 @@ public class Boxdemo {
 
     }
 }
-class Box{ // this is the declaration of the box class
+class Box1{ // this is the declaration of the box class
     double width;
     double height;
     double length;
@@ -40,7 +40,7 @@ class Box{ // this is the declaration of the box class
 //        height =10;
 //    }
 // The above constructor is good but what we need is the parameterised constructor
-    Box(double  l,double w,double h){
+    Box1(double  l,double w,double h){
         length =l;
         width =w;
         height =h;
