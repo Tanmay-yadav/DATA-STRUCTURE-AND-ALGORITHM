@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 public class doublylinkedlist {
     private listnode head;
     private listnode tail;
@@ -99,7 +101,7 @@ public class doublylinkedlist {
 
     public void deletelast() {
         if (isempty()) {
-            return;
+            throw new NoSuchElementException();
         }
         if (length == 1) { // Handle single-node case
             head = null;
@@ -129,7 +131,13 @@ public class doublylinkedlist {
         dll.displayforward();
         System.out.println("Length after deleting first: " + dll.length());
         dll.deletelast();
+        dll.deletefirst();
+        dll.deletefirst();
+        dll.deletefirst();
+        dll.deletefirst();
+        dll.deletefirst();
+        dll.deletelast();
         dll.displayforward();
-        System.out.println("Length after deleting last: " + dll.length());
+//        System.out.println("Length after deleting last: " + dll.length());
     }
 }
