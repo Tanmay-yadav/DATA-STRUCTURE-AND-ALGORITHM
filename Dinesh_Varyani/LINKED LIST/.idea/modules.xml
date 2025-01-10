@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LINKED LIST.iml" filepath="$PROJECT_DIR$/LINKED LIST.iml" />
       <module fileurl="file://$PROJECT_DIR$/doubly_linked_list/doubly_linked_list.iml" filepath="$PROJECT_DIR$/doubly_linked_list/doubly_linked_list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stack/stack.iml" filepath="$PROJECT_DIR$/stack/stack.iml" />
     </modules>
   </component>
 </project>
