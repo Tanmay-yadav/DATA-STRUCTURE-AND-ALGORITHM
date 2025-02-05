@@ -81,6 +81,15 @@ public void preorderRecursive(treenode root){
             }
             }
         }
+        public void PostorderRecursive(treenode root){
+        if (root==null){
+            return;
+        }
+
+        PostorderRecursive(root.left);
+        PostorderRecursive(root.right);
+            System.out.print(root.data+ " ");
+        }
 
 
     public static void main(String[] args) {
@@ -96,5 +105,9 @@ public void preorderRecursive(treenode root){
         binary.inorder(binary.root);
         System.out.println(" \n Inorder iterative:--");
         binary.inorderIterative(binary.root);
+        System.out.println(" \n Postorder recursive:--");
+        binary.PostorderRecursive(binary.root);
+
+
     }
 }
