@@ -1,4 +1,18 @@
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
+
+//           9     binary tree of the the below different tree traversal methods
+//          / \
+//          2  3
+//          /
+//          4
+
+
+
+
+
+
 
 public class Binary {
     private treenode root;
@@ -91,6 +105,48 @@ public void preorderRecursive(treenode root){
             System.out.print(root.data+ " ");
         }
 
+        public void PostorderIterative(treenode root ){
+        treenode current = root;
+        Stack<treenode> stack = new Stack<>();
+        while(current!=null || !stack.isEmpty() ){
+            if(current!=null ){
+                stack.push(current);
+                current =current.left;
+            }else{
+                treenode temp =stack.peek().right;
+                if(temp==null){
+                    temp=stack.pop();
+                    System.out.print(temp.data + " ");
+                    while(!stack.isEmpty() && temp==stack.peek().right){
+                        temp=stack.pop();
+                        System.out.print(temp.data + " ");
+                    }
+
+                }else{
+                    current =temp;
+                }
+            }
+        }
+        }
+        public void levelOrder (treenode root ){
+        if(root ==null){
+            return;
+        }
+            Queue<treenode> queue =new LinkedList<>();
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            treenode temp= queue.poll();
+            System.out.print(temp.data+ " ");
+            if(temp.left!=null){
+                queue.offer(temp.left);
+
+            }
+            if (temp.right!=null){
+                queue.offer(temp.right);
+            }
+        }
+        }
+
 
     public static void main(String[] args) {
         Binary binary =new Binary();
@@ -107,6 +163,11 @@ public void preorderRecursive(treenode root){
         binary.inorderIterative(binary.root);
         System.out.println(" \n Postorder recursive:--");
         binary.PostorderRecursive(binary.root);
+        System.out.println(" \n Postorder Iterative:--");
+        binary.PostorderIterative(binary.root);
+        System.out.println(" \n Level order traversal:--");
+        binary.levelOrder(binary.root);
+
 
 
     }
