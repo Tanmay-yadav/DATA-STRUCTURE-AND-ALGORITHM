@@ -55,7 +55,9 @@ treenode node1= bst.new treenode(5);
                 bst.insert(node1,9);
                 bst.insert(node1,6);
                 bst.insert(node1,1);
-                bst.insert(node1,2);
+                bst.insert(node1,2); // this will be problematics as according to the insertion method it
+                                           // could be easily inserted but how can 2 be smaller than 2 so
+                                           // we need to make some changes in the insertion code
 
         System.out.println("the nodes of bst are");
         bst.levelOrder(node1);
