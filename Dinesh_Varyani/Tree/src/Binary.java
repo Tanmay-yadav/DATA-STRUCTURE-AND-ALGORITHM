@@ -147,6 +147,23 @@ public void preorderRecursive(treenode root){
         }
         }
 
+        public int maxvalue(treenode root){
+        if (root==null){
+            return Integer.MIN_VALUE;
+
+        }
+        int result=root.data;
+        int left=maxvalue(root.left);
+        int right =maxvalue(root.right);
+        if (left>result){
+            result=left;
+        }
+        if(right>result){
+        result =right;
+        }
+        return result;
+        }
+
 
     public static void main(String[] args) {
         Binary binary =new Binary();
@@ -167,8 +184,9 @@ public void preorderRecursive(treenode root){
         binary.PostorderIterative(binary.root);
         System.out.println(" \n Level order traversal:--");
         binary.levelOrder(binary.root);
-
-
+        System.out.println(" \n Maximum value in the tree by recursion:--");
+        int result= binary.maxvalue(binary.root);
+        System.out.print(result);
 
     }
 }
