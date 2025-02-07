@@ -14,13 +14,15 @@ public class BinarySearchTree {
         }
     }
     public treenode  insert(treenode root,int value){
+
         if (root==null){
             root =new treenode(value);
             return root;
         }
-        if (value<root.data){
+
+        if (value<root.data && value!=root.data){
            root.left=insert(root.left,value);
-        }else{
+        }else if(value>root.data && value!=root.data){
             root.right=insert(root.right,value);
         }
         return root;
@@ -58,6 +60,7 @@ treenode node1= bst.new treenode(5);
                 bst.insert(node1,2); // this will be problematics as according to the insertion method it
                                            // could be easily inserted but how can 2 be smaller than 2 so
                                            // we need to make some changes in the insertion code
+                bst.insert(node1,2);
 
         System.out.println("the nodes of bst are");
         bst.levelOrder(node1);
