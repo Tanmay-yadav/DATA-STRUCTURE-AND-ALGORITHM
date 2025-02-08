@@ -46,6 +46,19 @@ public class BinarySearchTree {
             }
         }
     }
+    public treenode search(treenode root,int value){
+        if(root==null || root.data==value){
+            System.out.println("the key is present and the key is: "+ root.data);
+            return root;
+        }
+        if (value> root.data){
+            return search(root.right,value);
+        }
+        else if(value<root.data){
+            return search(root.left,value);
+        }
+        return null;
+    }
 
 
     public static void main(String[] args) {
@@ -64,7 +77,8 @@ treenode node1= bst.new treenode(5);
 
         System.out.println("the nodes of bst are");
         bst.levelOrder(node1);
-
+        System.out.println(" \nsearching the value in Binary search tree:");
+        bst.search(node1,2);
 
     }
 }
