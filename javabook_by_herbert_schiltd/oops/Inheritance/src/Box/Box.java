@@ -55,23 +55,35 @@ public class Box {
         this.weight = weight;
     }
 }
- class shipmentcost{
-
+ class shipmentcost extends Boxweigth {
+    int cost;
+public shipmentcost(double w,double h, double d,double m, int c ){
+    super(w,h,d,m);
+    cost =c;
 }
-
-class DemoBoxWeight{
+}
+//
+//class DemoBoxWeight{
+//    public static void main(String[] args) {
+//        Boxweigth b1 =new Boxweigth(2,3,4,10);
+//        Boxweigth b2 =new Boxweigth(10,10,10,10);
+//        double vol;
+//        vol = b1.volume();
+//        System.out.println("The volume of box1 is"+" "+vol);
+////        System.out.println("The weight of box1 is "+" "+ b1.weight); // when the weight is not private
+//        System.out.println("The weight of box1 is "+" "+ b1.getWeight());
+//        b1.setWeight(100);
+//        System.out.println("The weight after setweight method is "+" "+ b1.getWeight());
+//        System.out.println();
+//
+//
+//    }
+//}
+class DemoShipmentCost{
     public static void main(String[] args) {
-        Boxweigth b1 =new Boxweigth(2,3,4,10);
-        Boxweigth b2 =new Boxweigth(10,10,10,10);
-        double vol;
-        vol = b1.volume();
-        System.out.println("The volume of box1 is"+" "+vol);
-//        System.out.println("The weight of box1 is "+" "+ b1.weight); // when the weight is not private
-        System.out.println("The weight of box1 is "+" "+ b1.getWeight());
-        b1.setWeight(100);
-        System.out.println("The weight after setweight method is "+" "+ b1.getWeight());
-        System.out.println();
-
-
+        shipmentcost sc =new shipmentcost(9,3,4,5,10);
+        System.out.println(" The volume of the shipped box1 is:  "+" "+ sc.volume());
+        System.out.println("The weight of the shipped box1 is:"+" "+sc.getWeight());
+        System.out.println("The cost  of shipment is:" +" "+ sc.cost+" Rupees");
     }
 }
