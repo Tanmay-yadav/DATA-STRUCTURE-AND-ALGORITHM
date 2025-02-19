@@ -42,7 +42,7 @@ public class Box {
 //        width =w; // Now lets simplify and use the super keyword here
 //        height=h;
 //        depth =d;
-//        super(w,h,d);
+        super(w,h,d);
         weight =m;
     }
 
