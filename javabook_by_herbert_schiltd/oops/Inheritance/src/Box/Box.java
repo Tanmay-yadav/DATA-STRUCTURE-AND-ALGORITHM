@@ -39,9 +39,9 @@ public class Box {
     class Boxweigth extends Box{
     private double weight;
     Boxweigth(double w,double h,double d,double m){
-        width =w;
-        height=h;
-        depth =d;
+//        width =w; // Now lets simplify and use the super keyword here
+//        height=h;
+//        depth =d;
         weight =m;
     }
 
