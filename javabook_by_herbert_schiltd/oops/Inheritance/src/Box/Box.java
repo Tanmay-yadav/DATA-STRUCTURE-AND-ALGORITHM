@@ -55,6 +55,9 @@ public class Box {
         this.weight = weight;
     }
 }
+ class shipmentcost{
+
+}
 
 class DemoBoxWeight{
     public static void main(String[] args) {
