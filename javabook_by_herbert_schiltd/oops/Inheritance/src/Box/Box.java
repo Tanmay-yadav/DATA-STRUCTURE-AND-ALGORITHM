@@ -19,11 +19,11 @@ public class Box {
         depth=d;
     }
     // constructor used when no dimensions specified
-    Box(){
-        width=-1; // use -1 to indicate an
-        height=-1; // uninitialized
-        depth =-1; // box
-    }
+//    Box(){
+//        width=-1; // use -1 to indicate an
+//        height=-1; // uninitialized
+//        depth =-1; // box
+//    }
     // constructor when cube is created
     Box(double len){
         width=height=depth=len;
@@ -42,6 +42,7 @@ public class Box {
 //        width =w; // Now lets simplify and use the super keyword here
 //        height=h;
 //        depth =d;
+//        super(w,h,d);
         weight =m;
     }
 
