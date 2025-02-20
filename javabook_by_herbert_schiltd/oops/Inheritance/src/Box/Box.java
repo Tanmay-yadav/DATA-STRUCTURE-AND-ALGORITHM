@@ -84,6 +84,6 @@ class DemoShipmentCost{
         shipmentcost sc =new shipmentcost(9,3,4,5,10);
         System.out.println(" The volume of the shipped box1 is:  "+" "+ sc.volume());
         System.out.println("The weight of the shipped box1 is:"+" "+sc.getWeight());
-        System.out.println("The cost  of shipment is:" +" "+ sc.cost+" Rupees");
+        System.out.println("The cost  of shipment is:" +"   "+ sc.cost+" Rupees");
     }
 }
