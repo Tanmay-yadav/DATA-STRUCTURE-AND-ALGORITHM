@@ -6,7 +6,9 @@ public class Main {
         NewThread(){
             // create a new , second thread
             t = new Thread(this, "demo Thread");
-            System.out.println("child Thread "+ t);
+            System.out.println(t.getThreadGroup());
+            System.out.println(t.getName());
+            System.out.println("child Thread-->"+ t);
         }
         //This is the entry point for the second thread.
         public void run(){
