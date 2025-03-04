@@ -1,8 +1,8 @@
 public class Synchronization {
     // this program is not synchronnized
     static class callme{
-        void call(String msg){
-            System.out.println("["+ msg);
+        synchronized void call(String msg){
+            System.out.print("["+ msg);
         try{
         Thread.sleep(1000);
 
