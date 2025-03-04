@@ -1,7 +1,7 @@
 public class Synchronization {
     // this program is not synchronnized
     static class callme{
-        synchronized void call(String msg){
+         void call(String msg){
             System.out.print("["+ msg);
         try{
         Thread.sleep(1000);
@@ -21,8 +21,12 @@ public class Synchronization {
             msg =s;
             t = new Thread(this);
         }
-        public void run(){
-            target.call(msg);
+        public void run() {
+//            target.call(msg);
+            synchronized (target) {
+                ;
+                target.call(msg);
+            }
         }
     }
 //    class Synch{
