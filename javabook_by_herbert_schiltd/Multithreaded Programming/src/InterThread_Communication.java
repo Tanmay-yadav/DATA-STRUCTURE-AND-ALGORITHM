@@ -66,6 +66,7 @@ public class InterThread_Communication {
             // start the threads.
             p.t.start();
             c.t.start();
+
             System.out.println(" Press control-c to stop");
 
 //        }
