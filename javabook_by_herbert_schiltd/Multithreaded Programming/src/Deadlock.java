@@ -52,7 +52,8 @@
         }
 
         public static void main(String[] args) {
-            Deadlck dl = new Deadlck();
+            Deadlck dl = new Deadlck(); //  This will show static error
+            // if i uncommented the deadlock class above.
             dl.deadlockstart();
         }
     }
