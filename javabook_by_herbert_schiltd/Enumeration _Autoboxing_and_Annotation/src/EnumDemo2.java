@@ -2,7 +2,7 @@ import java.net.SocketTimeoutException;
 
 public class EnumDemo2 {
     enum Apple {
-        Jonathan, Goldendel, RedDel, Winesao, Cortland
+        Jonathan(), Goldendel, RedDel, Winesao, Cortland
     }
 // Using of values() and valuesof()
 //     Their genreal forms are shown here:
