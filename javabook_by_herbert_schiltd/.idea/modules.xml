@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Enumeration _Autoboxing_and_Annotation/Enumeration _Autoboxing_and_Annotation.iml" filepath="$PROJECT_DIR$/Enumeration _Autoboxing_and_Annotation/Enumeration _Autoboxing_and_Annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exception Handling/Exception Handling.iml" filepath="$PROJECT_DIR$/Exception Handling/Exception Handling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Generics/Generics.iml" filepath="$PROJECT_DIR$/Generics/Generics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oops/Inheritance/Inheritance.iml" filepath="$PROJECT_DIR$/oops/Inheritance/Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lambda Expression/Lambda Expression.iml" filepath="$PROJECT_DIR$/Lambda Expression/Lambda Expression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Multithreaded Programming/Multithreaded Programming.iml" filepath="$PROJECT_DIR$/Multithreaded Programming/Multithreaded Programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Packages and interfaces/Packages and interfaces.iml" filepath="$PROJECT_DIR$/Packages and interfaces/Packages and interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabook_by_herbert_schiltd.iml" filepath="$PROJECT_DIR$/javabook_by_herbert_schiltd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oops/oops.iml" filepath="$PROJECT_DIR$/oops/oops.iml" />
+    </modules>
+  </component>
+</project>
