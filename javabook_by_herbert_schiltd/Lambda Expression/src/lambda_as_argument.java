@@ -39,10 +39,10 @@ public class lambda_as_argument {
             String result = "";
             int i;
             for (int j = str.length()-1; j >=0 ; j--) {
-             result += str.charAt(j);
+                result += str.charAt(j);
 
             }
-        return result;};
+            return result;};
         // now, reverse can be passed as the first parameter to stringop()
         //since it refers to a StringFunc object.
         System.out.println("The String reversed :"+ stringop(Reverse,instr));
