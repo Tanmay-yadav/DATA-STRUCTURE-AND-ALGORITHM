@@ -3,11 +3,11 @@
 //will be replaced by a real type
 //when an object of type Gen is created.
 
-class Gen<T>{
+class Gen1<T>{
     T ob; //declare an object of type T
     //Pass the constructor a reference to
     // an object of type T.
-    Gen(T o){
+    Gen1(T o){
         ob=o;
     }
     //Return ob
@@ -23,10 +23,10 @@ class Gen<T>{
 public class GenDemo {
     public static void main(String[] args) {
         //create a Gen<Integer> object and assign its
-        Gen<Integer> iob;
+        Gen1<Integer> iob;
         //reference to iob. Notice the use of autoboxing
         //to encapsulate the value 88 within an Integer Object.
-        iob=new Gen<Integer>(88);
+        iob=new Gen1<Integer>(88);
 
         // show the type of data used by iob.
         iob.showType();
@@ -36,7 +36,7 @@ public class GenDemo {
         System.out.println("value: "+v);
         System.out.println();
         // create a Gen object for Strings.
-        Gen<String> strob= new Gen<String> ("Generic Test");
+        Gen1<String> strob= new Gen1<String> ("Generic Test");
         //show the type of data used by strob.
         strob.showType();
         // Get the Value of Strob.Again,notice
